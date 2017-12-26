@@ -167,7 +167,7 @@ input::-moz-focus-inner {
 
 .box {
     color: white;
-    font-size: 70px;
+    font-size: 100px;
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -209,9 +209,16 @@ input::-moz-focus-inner {
 /* We start writing out flexbox here. The above is just page setup */
 
 .container {
-    display: flex;
+    display:flex;
     border: 10px solid goldenrod;
     height: 100vh;
 /*    Adding Directions*/
-    flex-direction: column-reverse;/*row |row-reverse|column|column-reverse*/
+    flex-direction: row;
+    /*row |row-reverse|column|column-reverse*/
+   flex-wrap: wrap;
+}
+.box{
+   width: calc(33.333333333% - 20px );
+    margin: 10px;
+    box-sizing: border-box;
 }
