@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Learning Flexbox</title>
+    <title>flex-flow:flex-direction flex-wrap;</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,19 +28,32 @@
 
 </html>
 <style>
-    .item{
-      
+    .item {
+        width: 200px;
     }
+    /* Display Property(flex/inline-flex) */
+
     .container {
         display: block;
         display: inline-flex;
         /* display: flex; */
-        /* display: inline-block; */
+    }
+    /* flex-flow:flex-direction flex-wrap; */
+    /* flex-flow: <'flex-direction'> and <'flex-wrap'> *\
+    flex-flow: row nowrap;
+    flex-flow: column wrap;
+    flex-flow: column-reverse wrap-reverse;
 
-        /* flex-direction: row; */
-        /* flex-direction: row-reverse; */
-        /* flex-direction:column; */
-        /* flex-direction: column-reverse; */
-        /* display: inline-flex; */
+    /* Global values *\
+    flex-flow: inherit;
+    flex-flow: initial;
+    flex-flow: unset;
+    */
+
+    .container {
+        height: 50vh;
+        width: 75vw;
+        flex-flow: row wrap;
+        /* flex-flow: column wrap; */
     }
 </style>

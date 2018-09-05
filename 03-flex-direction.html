@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>03. flex-direction</title>
+</head>
+
+<body>
+    <pre> <strong> flex-direction:</strong><i>row|row-reverse|column|column-reverse|unset</i></pre>
+    <div class="container">
+        <div class="item item-01">01</div>
+        <div class="item item-02">02</div>
+        <div class="item item-03">03</div>
+        <div class="item item-04">04</div>
+        <div class="item item-05">05</div>
+        <div class="item item-06">06</div>
+        <div class="item item-07">07</div>
+        <div class="item item-08">08</div>
+        <div class="item item-09">09</div>
+        <div class="item item-10">10</div>
+        <div class="item item-11">11</div>
+    </div>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            border: 10px solid rgb(116, 61, 23);
+            height: 50vh;
+            box-sizing: border-box;
+            flex-direction: inherit;
+            flex-direction: initial;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: unset; */
+
+        }
+
+        .item {
+            padding: 10px;
+            font-size: 2.5rem;
+        }
+
+        .item-01 {
+            background: red;
+        }
+
+        .item-02 {
+            background: magenta;
+        }
+
+        .item-03 {
+            background: violet;
+        }
+
+        .item-04 {
+            background: blueviolet;
+        }
+
+        .item-05 {
+            background: indigo;
+        }
+
+        .item-06 {
+            background: blue;
+        }
+
+        .item-07 {
+            background: green;
+        }
+
+        .item-08 {
+            background: yellowgreen;
+        }
+
+        .item-09 {
+            background: yellow;
+        }
+
+        .item-10 {
+            background: orange;
+        }
+        .item-10 {
+            background: orange;
+        }
+        .item-11 {
+            background: orangered;
+        }
+    </style>
+</body>
+
+</html>

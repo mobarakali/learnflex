@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Learning Flexbox</title>
+    <title>flex-direction</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,19 +28,26 @@
 
 </html>
 <style>
-    .item{
-      
+    .item {
+        /* width: 200px; */
     }
+    /* Display Property(flex/inline-flex) */
+
     .container {
         display: block;
         display: inline-flex;
         /* display: flex; */
-        /* display: inline-block; */
+        /* height:50vh; */
+        /* width: 50vw; */
+        /* overflow: auto; */
+        /* overflow is working fine */
+    }
+    /* Flex Direction */
 
-        /* flex-direction: row; */
-        /* flex-direction: row-reverse; */
-        /* flex-direction:column; */
+    .container {
+        flex-direction: row;
+        flex-direction: row-reverse;
+        flex-direction:column;
         /* flex-direction: column-reverse; */
-        /* display: inline-flex; */
     }
 </style>
